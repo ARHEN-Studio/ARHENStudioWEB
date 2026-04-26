@@ -201,7 +201,7 @@
             <!-- ARHEN STUDIO en haut à gauche -->
             <button onclick="navigate('home')" class="flex items-center gap-4 group">
                 <div class="w-10 h-10 rounded overflow-hidden">
-                    <img src="./asset/logoAR.png" alt="ARHEN" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 transition-all duration-500" onerror="this.src='./LOGOoff.jpeg'">
+                    <img src="./logoAR.png" alt="ARHEN" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 transition-all duration-500">
                 </div>
                 <span class="font-display font-black text-2xl tracking-tighter text-white transition-colors duration-300 uppercase">
                     ARHEN <span class="group-hover:text-arhen-red transition-colors duration-300">STUDIO</span>
@@ -319,7 +319,7 @@
                     <div class="relative w-full max-w-2xl mx-auto xl:mx-0 xl:mr-auto pl-0 xl:pl-20">
                         <div class="absolute inset-0 bg-arhen-red rounded-[48px] blur-3xl opacity-20 scale-90 translate-y-10"></div>
                         <div class="relative w-full aspect-square bg-[#050505] rounded-[48px] border border-white/10 overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700 p-2">
-                            <img src="./SPYBOX/logoSpyBox.png" alt="Spybox Cover" class="w-full h-full object-cover rounded-[40px]" onerror="this.src='./asset/logoAR.png'">
+                            <img src="./logoSpyBox.png" alt="Spybox Cover" class="w-full h-full object-cover rounded-[40px]">
                         </div>
                     </div>
 
@@ -501,7 +501,7 @@
                 title: 'SPYBOX',
                 category: 'Jeu Mobile',
                 desc: 'Jeu de rôle et de bluff social interactif.',
-                img: './SPYBOX/logoSpyBox.png'
+                img: './logoSpyBox.png'
             }
         ];
 
@@ -510,7 +510,7 @@
             grid.innerHTML = projectsData.map(p => `
                 <div class="project-card group cursor-pointer flex flex-col h-full" onclick="navigate('${p.id}')">
                     <div class="project-img-wrapper shrink-0">
-                        <img src="${p.img}" alt="${p.title}" class="project-img" onerror="this.src='./asset/logoAR.png'">
+                        <img src="${p.img}" alt="${p.title}" class="project-img">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-4">
